@@ -8,7 +8,29 @@ const StyleApp = styled.div`
   flex-direction:column;
   justify-content:center;
   background-color:${props=>props.color};
+
+  button {
+    background-color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 200ms;
+    border-radius: 5px;
+
+    :hover {
+      background-color:tomato;
+    }
+    :active {
+      transform:scale(0.8);
+    }
+  }
+
+  h1 {
+    text-transform:uppercase;
+  }
 `
+
 
 function App() {
 
